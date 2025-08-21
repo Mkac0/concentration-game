@@ -61,7 +61,7 @@ function initGame() {
         renderCard(i); //face down
     });
     updateBoard();
-    if (endDialogEl?.open) endDialogEl.close();
+    if (endDialogEl.open) endDialogEl.close();
 }
 
 function onCardClick(e) {

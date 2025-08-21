@@ -1,5 +1,5 @@
 # Concentration Game
-![Concentration Game](https://i.imgur.com/H7I8Hjw.png)
+![Concentration Game](https://i.imgur.com/kwLTN1W.png)
 
 ## What is the Concentration Game?
 The concentration Game is a memory game where each block/button will have an image. The goal of the game is to match all 3 pair of images at a time.
@@ -45,7 +45,11 @@ While working on this project, one of my challenges was trying to determine whic
 
 + The `isSet()` function helped me check if the currently selected cards all have the same set, inside the array `every()`.
 
-    For more information about Array.prototype.every(), visit [MDN: Array.prototype.evey()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+    For more information about `Array.prototype.every()`, visit [MDN: Array.prototype.evey()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+
++ The `setTimeout()` method, which sets a timer that executes a function or code when the timer expires. This helped me set a timer for how long the endDialog pop-up should show.
+
+    For more information about `setTimeout()`, visit [MDN: setTimeout() method](https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout).
 
 ## Technologies Used
 + HTML

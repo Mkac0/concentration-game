@@ -11,18 +11,21 @@
     <header>
         <h1>Concentration Game</h1>
         <div id="hud">
-            <span>Moves: <strong id="moves">0</strong></span>
-            <span>Sets: <strong id="matches">0</strong></span>
+            <div class="stats">
+                <span>Moves: <strong id="moves">0</strong></span>
+                <span>Sets: <strong id="matches">0</strong></span>
+            </div>
+            <div>
             <button id="restart">Restart</button>
+            </div>
         </div>
     </header>
     <main>
         <section id="board" class="board"></section>
         <dialog id="endDialog">
             <p id="endMessage">You win!</p>
-            <form method="dialog">
-            </form>
-    </dialog>
+            <form method="dialog"></form>
+        </dialog>
     </main>
 </body>
 </html>
