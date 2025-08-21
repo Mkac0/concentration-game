@@ -53,4 +53,4 @@ While working on this project, one of my challenges was trying to determine whic
 + CSS
 
 ## Next Steps
-I plan to keep practicing browser-based-games, because it was fun and challenging. I want to be able to improve in this area and be able to do more challengin games.
+I plan to keep practicing browser-based-games, because it was fun and challenging. I want to be able to improve in this area and be able to do more challenging games.

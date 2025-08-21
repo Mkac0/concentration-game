@@ -84,23 +84,23 @@ function onCardClick(e) {
     if(selection.length < setSize) return;
 
     moves++
-    updateBoard();
 
     if (isSet()) {
-        const setValues = selection.map(i => deck[i].value);
         selection.forEach(i => {
             deck[i].isMatched = true;
             renderCard(i);
         });
         selection = [];
         matches++;
-        updateBoard();
 
         if (matches === totalSets) {
             if (endMessageEl) endMessageEl.textContent = `You win in ${moves} moves!`;
             if (endDialogEl && !endDialogEl.open) endDialogEl.showModal();
+                setTimeout(() => endDialogEl.close(), 3000);
         }
-        console.log("Set found:", setValues);
+
+        updateBoard();
+
     } else {
         lock = true;
         setTimeout(() => {
@@ -110,7 +110,8 @@ function onCardClick(e) {
             });
             selection = [];
             lock = false;
-    }, 1000);
+            updateBoard();
+        }, 1000);
     console.log("Game ended", won, "Moves:", moves, "Matches:", matches);
     }
 }
@@ -144,7 +145,7 @@ function updateBoard() {
     if (moves >= 8 && matches < totalSets) {
         if (endMessageEl) endMessageEl.textContent = `You lose! Reached ${moves} moves.`;
         if (endDialogEl && !endDialogEl.open) endDialogEl.showModal();
-        setTimeout(() => endDialogEl.close() && endDialogEl.open(), 1500);
+        setTimeout(() => endDialogEl.close(), 3000);
     }
 }
 
