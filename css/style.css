@@ -9,6 +9,10 @@ body {
   min-height: 1000px;
 }
 
+#hud {
+  font-size: 20px;
+}
+
 #matches, #moves {
   margin-left: 3px;
 }
@@ -41,7 +45,6 @@ body {
   border: 3px solid rgb(226, 167, 5);
   border-radius: 55px;
   position: relative;
-  background-color: rgb(235, 184, 65);
 }
 
 .v1 {
