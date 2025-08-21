@@ -110,7 +110,7 @@ function onCardClick(e) {
             });
             selection = [];
             lock = false;
-    });
+    }, 1000);
     console.log("Game ended", won, "Moves:", moves, "Matches:", matches);
     }
 }
@@ -144,6 +144,7 @@ function updateBoard() {
     if (moves >= 8 && matches < totalSets) {
         if (endMessageEl) endMessageEl.textContent = `You lose! Reached ${moves} moves.`;
         if (endDialogEl && !endDialogEl.open) endDialogEl.showModal();
+        setTimeout(() => endDialogEl.close(), 2000);
     }
 }
 
