@@ -141,6 +141,10 @@ function renderCard(index) {
 function updateBoard() {
     movesEls.textContent = String(moves);
     matchesEls.textContent = String(matches);
+    if (moves >= 8 && matches < totalSets) {
+        if (endMessageEl) endMessageEl.textContent = `You lose! Reached ${moves} moves.`;
+        if (endDialogEl && !endDialogEl.open) endDialogEl.showModal();
+    }
 }
 
 /*----------------------------- Event Listeners -----------------------------*/
