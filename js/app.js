@@ -144,7 +144,7 @@ function updateBoard() {
     if (moves >= 8 && matches < totalSets) {
         if (endMessageEl) endMessageEl.textContent = `You lose! Reached ${moves} moves.`;
         if (endDialogEl && !endDialogEl.open) endDialogEl.showModal();
-        setTimeout(() => endDialogEl.close(), 2000);
+        setTimeout(() => endDialogEl.close() && endDialogEl.open(), 1500);
     }
 }
 

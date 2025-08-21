@@ -17,6 +17,8 @@ body {
     margin-left: 112px;
     min-height: 24px;
     background-color: rgb(242, 177, 55);
+    padding: 10px 10px;
+    border-radius: 8px;
 }
 
 .header {
@@ -39,6 +41,7 @@ body {
   border: 3px solid rgb(226, 167, 5);
   border-radius: 55px;
   position: relative;
+  background-color: rgb(235, 184, 65);
 }
 
 .v1 {
@@ -63,4 +66,5 @@ dialog {
   border: none;
   border-radius: 12px;
   padding: 20px 24px;
+  background-color: rgb(236, 192, 110);
 }
